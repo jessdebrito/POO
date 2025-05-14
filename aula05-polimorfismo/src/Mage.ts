@@ -16,4 +16,8 @@ export class Mage extends Personagem {
   public atacar(): string {
     return "Ataque do Mago";
   }
+  public defender(atacante: Personagem): number {
+    let defesafinal = Util.randomizar(100, 1_000);
+    return defesafinal;
+  }
 }
